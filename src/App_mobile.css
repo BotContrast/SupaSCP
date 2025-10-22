@@ -1,0 +1,60 @@
+/* --- Mobile view adjustments --- */
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none; /* Hide table headers */
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.75rem;
+    background: #fff;
+  }
+
+  td {
+    border: none;
+    padding: 0.75rem 0;
+    text-align: center; /* center text and content */
+    position: relative;
+  }
+
+  /* Label appears ABOVE content */
+  td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.25rem;
+    text-align: center; /* Center the label */
+  }
+
+  /* Center the image on mobile */
+  td img {
+    max-width: 150px;
+    margin: 0.5rem auto;
+    display: block;
+  }
+
+  /* Actions column — stack buttons vertically */
+  td[data-label="Actions"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  td[data-label="Actions"] button {
+    width: 80%;
+    margin: 0.25rem 0;
+  }
+}

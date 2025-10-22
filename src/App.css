@@ -1,0 +1,70 @@
+.admin {
+  padding: 1rem;
+}
+
+.admin table-wrapper {
+  overflow-x: auto;
+}
+
+/* Table base styling */
+.admin table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  table-layout: fixed;
+  text-align: center; 
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  vertical-align: middle;
+  text-align: center;    
+}
+
+td img {
+  display: block;        
+  margin: 0 auto;        
+  max-width:75%; 
+  height: auto;
+}
+
+
+td button {
+  min-width: 60px;
+  padding: 0.4rem 0;
+  cursor: pointer;
+}
+
+/* Form styling */
+.form input {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form button {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Target col 3,4,5 to take 2/3 width equally */
+table colgroup col:nth-child(3),
+table colgroup col:nth-child(4),
+table colgroup col:nth-child(5) {
+  width: 30%; /* (2/3) / 3 */
+}
+
+/* The other columns share remaining 1/3 */
+table colgroup col:nth-child(1),
+table colgroup col:nth-child(2),
+table colgroup col:nth-child(6) {
+  width: auto; /* will share remaining space */
+}

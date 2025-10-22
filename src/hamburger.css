@@ -1,0 +1,76 @@
+.hamburger-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* ☰ Icon */
+.hamburger-icon {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.hamburger-icon:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Dropdown Panel (default aligns left) */
+.hamburger-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1000;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 400px;
+}
+
+/* ⬅️ Adjust alignment when used on the right side */
+.hamburger-dropdown.right {
+  left: auto;
+  right: 0;
+}
+
+/* Menu items */
+.dropdown-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Admin section at bottom */
+.dropdown-admin {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.admin-btn {
+  width: 100%;
+}

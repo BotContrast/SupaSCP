@@ -1,71 +1,15 @@
-<<<<<<< HEAD
-.admin {
-  padding: 1rem;
-}
-
-.admin table-wrapper {
-  overflow-x: auto;
-}
-
-/* Table base styling */
-.admin table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-  table-layout: fixed;
-  text-align: center; 
-=======
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
   table-layout: fixed; /* important for fixed widths */
->>>>>>> 8a689c9df9657bc4b0ec226f66d15fc9d996827f
 }
 
 th, td {
   border: 1px solid #ccc;
   padding: 0.5rem;
-<<<<<<< HEAD
-  vertical-align: middle;
-  text-align: center;    
-}
-
-td img {
-  display: block;        
-  margin: 0 auto;        
-  max-width:75%; 
-  height: auto;
-}
-
-
-td button {
-  min-width: 60px;
-  padding: 0.4rem 0;
-  cursor: pointer;
-}
-
-/* Form styling */
-.form input {
-  display: block;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  width: 100%;
-  max-width: 300px;
-}
-
-.form button {
-  margin-top: 0.5rem;
-  padding: 0.6rem 1rem;
-  cursor: pointer;
-}
-
-.table-wrapper {
-  overflow-x: auto;
-=======
   overflow: hidden;  /* prevent overflow */
   min-height: 200px;
->>>>>>> 8a689c9df9657bc4b0ec226f66d15fc9d996827f
 }
 
 /* Target col 3,4,5 to take 2/3 width equally */
@@ -80,8 +24,6 @@ table colgroup col:nth-child(1),
 table colgroup col:nth-child(2),
 table colgroup col:nth-child(6) {
   width: auto; /* will share remaining space */
-<<<<<<< HEAD
-=======
 }
 
 td img {
@@ -103,5 +45,4 @@ td button {
   padding: 0.5rem;
   width: 100%;
   max-width: 300px;
->>>>>>> 8a689c9df9657bc4b0ec226f66d15fc9d996827f
 }

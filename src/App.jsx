@@ -1,10 +1,16 @@
 import { useEffect, useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import { supabase } from './supabaseClient'
+<<<<<<< HEAD
 import SCP from  './SCPs'
 import Hamburger from './hamburger';
 import './App.css'
 import './App_mobile.css'
+=======
+import Menu from './Menu'
+import SCP from  './SCPs'
+import './App.css'
+>>>>>>> 8a689c9df9657bc4b0ec226f66d15fc9d996827f
 
 
 function App() {
@@ -63,6 +69,7 @@ function App() {
               <strong>SCP React Application</strong>
             </h1>
 
+<<<<<<< HEAD
             <div style={{ position: 'absolute', right: 0 }}>
               <Hamburger 
                 scps={records} 
@@ -78,6 +85,24 @@ function App() {
         {
           view === 'detail' && selectedName && (
             
+=======
+            {/*Temp Menu admin*/}
+            <div style={{ position: 'absolute', right: 0 }}>
+              <Button variant="flat" onClick={() => setView('admin')}>
+                Admin
+              </Button>
+            </div>
+          </div>
+
+          {/*Temp Menu generate */}
+          <nav className="d-flex flex-wrap justify-content-center gap-2 mb-4">
+            <Menu scps={records} onSelect={(scp) => {setSelectedName(scp); setView('detail'); }}/>
+          </nav>
+
+
+        {
+          view === 'detail' && selectedName && (
+>>>>>>> 8a689c9df9657bc4b0ec226f66d15fc9d996827f
             <SCP selectedSCP={selectedName} />
           )
         }
@@ -99,7 +124,10 @@ function App() {
           view === 'admin' && (
           <div className="admin">
             <h2>Admin Panel</h2>
+<<<<<<< HEAD
             <div className="table-wrapper">
+=======
+>>>>>>> 8a689c9df9657bc4b0ec226f66d15fc9d996827f
             <table>
               <colgroup>
                 <col/>
@@ -122,6 +150,7 @@ function App() {
               <tbody>
                 {records.map((rec) => (
                   <tr key={rec.id}>
+<<<<<<< HEAD
                     <td data-label="Name">{rec.Name}</td>
                     <td data-label="Class">{rec.Class}</td>
                     <td data-label="Containment">{rec.Containment}</td>
@@ -130,6 +159,14 @@ function App() {
                       <img src={rec.Image} alt={rec.Name} />
                     </td>
                     <td data-label="Actions">
+=======
+                    <td>{rec.Name}</td>
+                    <td>{rec.Class}</td>
+                    <td>{rec.Containment}</td>
+                    <td>{rec.Description}</td>
+                    <td><img src={rec.Image} alt="" /></td>
+                    <td>
+>>>>>>> 8a689c9df9657bc4b0ec226f66d15fc9d996827f
                       <button onClick={() => setForm(rec)}>Edit</button>
                       <button onClick={() => handleDelete(rec.id)}>Delete</button>
                     </td>
@@ -137,7 +174,10 @@ function App() {
                 ))}
               </tbody>
             </table>
+<<<<<<< HEAD
             </div>
+=======
+>>>>>>> 8a689c9df9657bc4b0ec226f66d15fc9d996827f
 
 
             <div className="form">

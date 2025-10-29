@@ -13,7 +13,7 @@
   margin-top: 1rem;
   table-layout: fixed;
   text-align: center; 
-  margin-bottom: 2rem; /* adds space before the form */
+  margin-bottom: 2rem;
 }
 
 th, td {
@@ -39,8 +39,8 @@ td button {
 
 .form {
   width: 100%;
-  max-width: 600px; /* matches your table width */
-  margin: 0 auto 1rem auto; /* centers form and adds spacing below */
+  max-width: 600px;
+  margin: 0 auto 1rem auto; 
   padding: 1rem;
   background: #fff;
   border: 1px solid #ccc;

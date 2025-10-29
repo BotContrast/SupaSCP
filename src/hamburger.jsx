@@ -25,13 +25,7 @@ function Hamburger({ scps, onSelect, onAdminClick }) {
 
   return (
     <div className="hamburger-container" ref={menuRef}>
-      <button 
-        className="hamburger-icon" 
-        onClick={toggleMenu}
-        aria-label="Toggle menu"
-      >
-        ☰
-      </button>
+      <button className="hamburger-icon" onClick={toggleMenu} aria-label="Toggle menu">☰</button>
 
       {isOpen && (
         <div className="hamburger-dropdown right">

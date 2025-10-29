@@ -41,10 +41,10 @@
 
   /* Center the image on mobile */
   td img {
-    width: 80vw;          /* 80% of the viewport width */
-    max-width: 80vw;      /* ensures it doesn’t exceed screen width */
-    height: auto;         /* keeps proportions */
-    margin: 0.5rem auto;  /* centers the image */
+    width: 80vw;         
+    max-width: 80vw;     
+    height: auto;         
+    margin: 0.5rem auto;  
     display: block;
   }
 

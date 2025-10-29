@@ -64,15 +64,9 @@ function App() {
             </h1>
 
             <div style={{ position: 'absolute', right: 0 }}>
-              <Hamburger 
-                scps={records} 
-                onSelect={(scp) => {
-                  setSelectedName(scp);
-                  setView('detail');
-                }} 
-                onAdminClick={() => setView('admin')}
-              />
+              <Hamburger scps={records} onSelect={(scp) => {setSelectedName(scp); setView('detail');}} onAdminClick={() => setView('admin')} />
             </div>
+
           </div>
 
         {
@@ -101,14 +95,7 @@ function App() {
             <h2>Admin Panel</h2>
             <div className="table-wrapper">
             <table>
-              <colgroup>
-                <col/>
-                <col/>
-                <col/>
-                <col/>
-                <col/>
-                <col/>
-              </colgroup>
+              <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
               <thead>
                 <tr>
                   <th>Name</th>
@@ -138,7 +125,6 @@ function App() {
               </tbody>
             </table>
             </div>
-
 
             <div className="form">
               <input name="Name" value={form.Name} onChange={handleInputChange} placeholder="Name" />

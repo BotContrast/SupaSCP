@@ -3,7 +3,7 @@
   display: inline-block;
 }
 
-/* ☰ Icon */
+/* Icon */
 .hamburger-icon {
   font-size: 28px;
   background: none;
@@ -36,7 +36,7 @@
   max-height: 400px;
 }
 
-/* ⬅️ Adjust alignment when used on the right side */
+/* Adjust alignment when used on the right side */
 .hamburger-dropdown.right {
   left: auto;
   right: 0;

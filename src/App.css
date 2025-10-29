@@ -1,0 +1,97 @@
+.admin {
+  padding: 1rem;
+}
+
+.admin table-wrapper {
+  overflow-x: auto;
+}
+
+/* Table base styling */
+.admin table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  table-layout: fixed;
+  text-align: center; 
+  margin-bottom: 2rem; /* adds space before the form */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  vertical-align: middle;
+  text-align: center;    
+}
+
+td img {
+  display: block;        
+  margin: 0 auto;        
+  max-width:75%; 
+  height: auto;
+}
+
+
+td button {
+  min-width: 60px;
+  padding: 0.4rem 0;
+  cursor: pointer;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px; /* matches your table width */
+  margin: 0 auto 1rem auto; /* centers form and adds spacing below */
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Make inputs fill the width evenly */
+.form input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.form button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form button:hover {
+  background-color: #555;
+}
+
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Target col 3,4,5 to take 2/3 width equally */
+table colgroup col:nth-child(3),
+table colgroup col:nth-child(4),
+table colgroup col:nth-child(5) {
+  width: 30%; /* (2/3) / 3 */
+}
+
+/* The other columns share remaining 1/3 */
+table colgroup col:nth-child(1),
+table colgroup col:nth-child(2),
+table colgroup col:nth-child(6) {
+  width: auto; /* will share remaining space */
+}

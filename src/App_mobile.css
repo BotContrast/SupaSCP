@@ -1,0 +1,77 @@
+/* --- Mobile view adjustments --- */
+@media (max-width: 2400px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none; /* Hide table headers */
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.75rem;
+    background: #fff;
+  }
+
+  td {
+    border: none;
+    padding: 0.75rem 0;
+    text-align: center; /* center text and content */
+    position: relative;
+  }
+
+  /* Label appears ABOVE content */
+  td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.25rem;
+    text-align: center; /* Center the label */
+  }
+
+  /* Center the image on mobile */
+  td img {
+    width: 80vw;          /* 80% of the viewport width */
+    max-width: 80vw;      /* ensures it doesn’t exceed screen width */
+    height: auto;         /* keeps proportions */
+    margin: 0.5rem auto;  /* centers the image */
+    display: block;
+  }
+
+
+  /* Actions column — stack buttons vertically */
+  td[data-label="Actions"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  td[data-label="Actions"] button {
+    width: 80%;
+    margin: 0.25rem 0;
+  }
+}
+
+.form {
+  width: 90%;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.form input,
+.form button {
+  width: 100%;
+}
+

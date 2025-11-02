@@ -92,7 +92,7 @@ function App() {
         {
           view === 'admin' && (
           <div className="admin">
-            <h2>Admin Panel</h2>
+            <h2 className="text-center">Admin Panel</h2>
             <div className="table-wrapper">
             <table>
               <colgroup><col/><col/><col/><col/><col/><col/></colgroup>
@@ -114,7 +114,8 @@ function App() {
                     <td data-label="Containment">{rec.Containment}</td>
                     <td data-label="Description">{rec.Description}</td>
                     <td data-label="Image">
-                      <img src={rec.Image} alt={rec.Name} />
+                      {/*If there is no image mention no image otherwise show image*/}
+                      {rec.Image ? (<img src={rec.Image} alt={rec.Name}/>) : (<em>No image available</em>)}
                     </td>
                     <td data-label="Actions">
                       <button onClick={() => setForm(rec)}>Edit</button>
